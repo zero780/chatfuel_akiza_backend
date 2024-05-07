@@ -80,7 +80,7 @@ import dj_database_url
 import os
 
 DATABASES = {
-	"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
@@ -120,6 +120,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
