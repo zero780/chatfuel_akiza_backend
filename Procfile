@@ -1,1 +1,0 @@
-web: gunicorn chatfuel_akiza.wsgi --log-file -
