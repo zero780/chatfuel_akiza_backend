@@ -1,0 +1,29 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+.idea/
+.DS_Store/
+.DS_Store
+
+# Ignorar migrations
+#**/migrations/*
+#!**/migrations/__init__.py
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+#settings.py
+
+chatfuel_akiza/settings.py
+
+# Archivos Subidos
+media/
+
+# Virtual Enviroment
+venv/
+
+#Pycache
+__pycache__/
+
+# Archivos compilados de Python
+*.pyc
+
+db.sqlite3
