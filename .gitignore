@@ -12,7 +12,7 @@
 !**/migrations/__init__.py
 #settings.py
 
-chatfuel_akiza/settings.py
+# chatfuel_akiza/settings.py
 
 # Archivos Subidos
 media/
