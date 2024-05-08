@@ -5,7 +5,7 @@ from chatfuel_akiza.apps.backend.cliente.models import InformacionInicialCliente
 class InformacionInicialClienteAdmin(admin.ModelAdmin):
     model = InformacionInicialCliente
     search_fields       = ['servicio_seleccionado', 'nombres', 'correo']
-    list_display        = ('servicio_seleccionado', 'nombres', 'correo')
+    list_display        = ('fecha_creacion', 'servicio_seleccionado', 'nombres', 'correo')
     list_filter         = ('servicio_seleccionado', 'nombres', 'correo')
     exclude             = ('token',)
 
