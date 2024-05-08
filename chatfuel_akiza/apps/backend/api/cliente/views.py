@@ -54,6 +54,7 @@ class InformacionInicialClienteViewSet(viewsets.ModelViewSet):
             print(data)
             print("==========================================")
             
+             
             return HttpResponse()
 
         except Exception as err:
