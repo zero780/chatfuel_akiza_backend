@@ -53,7 +53,7 @@ class InformacionInicialClienteViewSet(viewsets.ModelViewSet):
             data = request.data
             print(data)
             print("==========================================")
-            info = InformacionInicialCliente(nombres=data['nombres_cliente'], correo=data['correo_cliente'], telefono=data['telefono_cliente'], detalles=data['detalles_respuesta_cliente'], servicio_seleccionado=data['servicio_seleccionado'])
+            info = InformacionInicialCliente(nombres=data['nombres_cliente'], correo=data['correo_cliente'], telefono=data['telefono_cliente'], detalles=data['detalles_respuesta_cliente'], servicio_seleccionado=InformacionInicialCliente.get_servicio_seleccionado(data['servicio_seleccionado']))
             info.save()
              
             return HttpResponse()

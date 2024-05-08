@@ -36,3 +36,10 @@ class InformacionInicialCliente(models.Model):
     def generar_token(self):
         token = str(uuid.uuid4())
         return token
+    
+    @classmethod
+    def get_servicio_seleccionado(cls, seleccionado):
+        servicios = dict(cls.SERVICIOS)
+        for key, val in servicios.items():
+            if val.lower() == seleccionado.lower():
+                return key
